@@ -1,0 +1,87 @@
+﻿<html DIR="LTR" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>What's New in the JDBC Driver</title>
+    
+    <link rel="stylesheet" type="text/css" href="../local/Classic.css">
+      
+    </link>
+    
+    <script src="../local/script.js">
+      
+    </script><script src="../local/script_main.js">&amp;nbsp;</script>
+  </head>
+  <body>
+    <!--Topic built:09/24/2007 09:01:38-->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="header">
+      <table width="100%" id="topTable"><tr>
+          <td align="left">
+            <span id="headerBold">What's New in the JDBC Driver</span>
+          </td>
+          <td align="right">
+            
+          </td>
+        </tr></table>
+      
+      
+      
+    </div>
+    <div id="mainSection">
+      
+        
+        
+		<font color="DarkGray"><!-- [This topic is pre-release documentation and is subject to change in future releases. Blank topics are included as placeholders.]<br/>[Documentation built on $$TIMESTAMP$$]  --> </font> <p /> <p />
+	
+        <div id="introductionSection" class="section">
+    <p>The following sections discuss new features in the Microsoft SQL Server 2005 JDBC Driver.</p>
+  </div><h1 class="heading">What's New in the JDBC Driver Version 1.2</h1><div id="sectionSection0" class="section"><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+      <p xmlns="">This version 1.2 release of the Microsoft SQL Server 2005 JDBC Driver includes several new features and enhancements. The following sections describe the enhancements made to the JDBC driver for the version 1.2 release.</p>
+    </content><sections xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+      <h1 class="heading" xmlns="">Adaptive Buffering</h1><div id="sectionSection" class="section" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <p xmlns="">The JDBC driver now provides an adaptive buffering feature, which is designed to retrieve any kind of large-value data without the overhead of server cursors. For more information about how to use the adaptive buffering feature, see <a href="92d4e3be-c3e9-4732-9a60-b57f4d0f7cb7.htm">Using Adaptive Buffering</a>. </p>
+          <p xmlns="">The JDBC driver provides a new <b>responseBuffering</b> property and new streaming getter methods as part of this feature. The <b>responseBuffering</b> connection string property allows you to set or retrieve the adaptive buffering mode. For more information about the new <b>responseBuffering</b> property, see <a href="f1b62700-f046-488d-bd6b-a5cd8fc345b7.htm">Setting the Connection Properties</a>. </p>
+          <p xmlns="">The new <b>get&lt;Type&gt;Stream</b> methods support the large value OUT parameters. For more information, see the <a href="30710a63-c05d-47d9-9cf9-c087a1c76373.htm">SQLServerCallableStatement</a> class.</p>
+        </content></div>
+      <h1 class="heading" xmlns="">SSL Encryption</h1><div id="sectionSection" class="section" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <p xmlns="">The JDBC driver now provides Secure Sockets Layer (SSL) encryption to secure the communication channel with SQL Server database. For more information about how to encrypt data by using SSL, see <a href="8e566243-2f93-4b21-8065-3c8336649309.htm">Using SSL Encryption</a>.</p>
+          <p xmlns="">The JDBC driver provides new connection properties and new getter and setter methods as part of this feature. New connection properties are: <b>encrypt</b>, <b>trustServerCertificate</b>, <b>trustStore</b>, <b>trustStorePassword</b>, and <b>hostNameInCertificate</b>. For more information about how to use these new connection string properties in a Java application, see <a href="f1b62700-f046-488d-bd6b-a5cd8fc345b7.htm">Setting the Connection Properties</a>. For more information about how to set or get the value of these properties by using the appropriate setter and getter methods, see the <a href="097434fd-2b74-411c-a5ed-eba04481dde5.htm">SQLServerDataSource</a> class.</p>
+        </content></div>
+      <h1 class="heading" xmlns="">Tightly Coupled XA Transactions</h1><div id="sectionSection" class="section" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <p xmlns="">The JDBC driver now provides a <a href="379857c3-9de1-4964-8782-32df317cbfbb.htm">SSTRANSTIGHTLYCPLD</a> flag to allow the applications to use the tightly coupled XA transactions, which have different XA branch transaction IDs (XIDs) but have the same global transaction ID (GTRID). For more information, see <a href="574e326f-0520-4003-bdf1-62d92c3db457.htm">Understanding XA Transactions</a>.</p>
+        </content></div>
+      <h1 class="heading" xmlns="">Sample Applications</h1><div id="sectionSection" class="section" xmlns=""><content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <p xmlns="">The help system for the JDBC driver includes a collection of sample applications that demonstrate various techniques for using the JDBC driver in Java applications. In this 1.2 version, the help system also provides two new additional samples that demonstrate using the adaptive buffering feature. For more information about the sample applications, see <a href="e136b87c-a138-45d6-8c3e-bcef94b7e483.htm">Sample JDBC Driver Applications</a>.</p>
+        </content></div>
+    </sections></div><span id="seeAlsoSpan"><h1 class="heading">See Also</h1></span><div id="seeAlsoSection" class="section" name="collapseableSection"><a href="939a8773-2583-49a4-bf00-6b892fbe39dc.htm">Overview of the JDBC Driver</a><br /><br /></div><!--[if gte IE 5]>
+			<tool:tip element="seeAlsoToolTip" avoidmouse="false"/><tool:tip element="languageFilterToolTip" avoidmouse="false"/><tool:tip element="roleInfoSpan" avoidmouse="false"/>
+		<![endif]-->
+      <div id="footer" class="section">
+        
+		<hr />
+		
+		<span id="fb" class="feedbackcss">
+			
+			
+		</span>
+		
+		<a href="9bad553b-9e70-4696-8499-2e35f772a1e0.htm">
+			
+			© 2007 Microsoft Corporation. All rights reserved.
+		</a>
+ 	
+	
+      </div>
+    </div>
+  </body>
+</html>
