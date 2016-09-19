@@ -6,8 +6,14 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <name>Java-SE</name>
+
     <modules>
         <module>BackgroundCollector</module>
+        <module>HelloEsraa</module>
+        <module>HibernateProj</module>
+        <module>JMS_Project</module>
+        <module>SpringDemo</module>
     </modules>
 
     <properties>
