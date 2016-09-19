@@ -18,6 +18,7 @@
         <module>Threading</module>
         <module>RadioSiteTest</module>
         <module>SendSMS</module>
+        <module>XML_Parser</module>
     </modules>
 
     <properties>
