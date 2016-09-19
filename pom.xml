@@ -19,6 +19,7 @@
         <module>RadioSiteTest</module>
         <module>SendSMS</module>
         <module>XML_Parser</module>
+        <module>SP_Excuter</module>
     </modules>
 
     <properties>
