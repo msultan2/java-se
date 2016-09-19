@@ -11,9 +11,10 @@
     <modules>
         <module>BackgroundCollector</module>
         <module>HibernateProj</module>
-        <!--<module>JMS_Project</module>-->
+        <module>JMS_Project</module>
         <module>SpringDemo</module>
         <module>ANT_Proj</module>
+        <module>JMS_Test</module>
     </modules>
 
     <properties>
