@@ -17,6 +17,7 @@
         <module>JMS_Test</module>
         <module>Threading</module>
         <module>RadioSiteTest</module>
+        <module>SendSMS</module>
     </modules>
 
     <properties>
