@@ -13,6 +13,7 @@
         <module>HibernateProj</module>
         <module>JMS_Project</module>
         <module>SpringDemo</module>
+        <module>ANT_Proj</module>
     </modules>
 
     <properties>

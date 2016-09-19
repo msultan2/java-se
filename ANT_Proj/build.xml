@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+   <project name="Hello World Project" default="run">
+   
+   <property name="sitename" value="www.tutorialspoint.com"/>
+   
+   <target name="info">
+      <echo>Hello World - Welcome to Apache Ant!</echo>
+   </target>
+   <target name="Target Two">
+      <echo>Executing Target Two</echo>
+   </target>
+   
+   <target name="run" depends="compile">
+      <java classname="com.ant.Demo">
+      	<classpath path="staging" />
+      </java>
+   </target>
+   <target name="compile" depends="info2">
+      <javac includeantruntime="false" srcdir="./src" destdir="staging" />
+      <echo> Compliling ${basedir}</echo>
+   </target>
+   <target name="info2">
+      <echo>ant default target: ${ant.project.default-target}</echo>
+      <echo>Apache Ant version is ${ant.version} - You are at ${sitename} </echo>
+   </target>
+
+<!--
+<target name="deploy" depends="package">
+  ....
+</target>
+
+<target name="package" depends="clean,compile">
+  ....
+</target>
+
+<target name="clean" >
+  ....
+</target>
+
+<target name="compile" >
+  ....
+</target>
+-->
+ 
+</project>
+
