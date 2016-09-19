@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd"> 
+
+<beans>
+	<bean id="triangle" class="javabrains.Triangle">
+		<!-- the basic set value initialization -->
+		<property name="type" value="Equilateral"> </property>
+		<!-- the basic constructor initialization -->
+		<constructor-arg value="Equilateral2"> </constructor-arg>
+		<constructor-arg value="10"> </constructor-arg>
+	</bean>
+	<bean id="triangle2" class="javabrains.Triangle">
+	<!-- constructor by variable type -->
+		<constructor-arg type="String" value="20"> </constructor-arg>
+	</bean>
+	<bean id="triangle3" class="javabrains.Triangle">
+	<!-- constructor by variable sequence -->
+		<constructor-arg index="1" value="30"> </constructor-arg>
+		<constructor-arg index="0" value="Equilateral3"> </constructor-arg>
+	</bean>
+	
+	<!-- constructor by object injection -->
+	<bean id="triangleInjection" class="javabrains.TriangleInject" name="triangleInjection1">
+		<property name="pointA" ref="zeroPoint"> </property>
+		<property name="pointB" ref="point2"> </property>
+		<property name="pointC" ref="point3"> </property>
+	</bean>
+	<bean id="zeroPoint" class="javabrains.Point">
+		<property name="x" value="0"> </property>
+		<property name="y" value="0"> </property>
+	</bean>
+	<bean id="point2" class="javabrains.Point">
+		<property name="x" value="20"> </property>
+		<property name="y" value="0"> </property>
+	</bean>
+	<bean id="point3" class="javabrains.Point">
+		<property name="x" value="-20"> </property>
+		<property name="y" value="0"> </property>
+	</bean>
+	
+	<bean id="triangleInjection2" class="javabrains.TriangleInject">
+		<!-- 
+		<property name="pointA">   
+			<idref = "zeroPoint"/>	
+		</property> 	
+		 -->
+		 <property name="pointA" ref = "zeroPoint"/>	
+		 
+		<property name="pointB">
+			<bean class="javabrains.Point">
+				<property name="x" value="-20"> </property>
+				<property name="y" value="0"> </property>
+			</bean>
+		</property>
+		<property name="pointC">
+			<bean class="javabrains.Point">
+				<property name="x" value="20"> </property>
+				<property name="y" value="0"> </property>
+			</bean>
+		</property>
+	</bean>
+	
+	<alias name="triangleInjection2" alias="triangleInjectionInnerBean"/>
+	
+	<bean id="triangleList" class="javabrains.TriangleList">
+		<property name="points">
+			<list>
+				<ref bean="zeroPoint" />
+				<ref bean="point3" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="triangleAutowiring" class="javabrains.TriangleInject" autowire="byName">
+	</bean>
+	<bean id="pointA" class="javabrains.Point">
+		<property name="x" value="0"> </property>
+		<property name="y" value="0"> </property>
+	</bean>
+	<bean id="pointB" class="javabrains.Point">
+		<property name="x" value="20"> </property>
+		<property name="y" value="0"> </property>
+	</bean>
+	<bean id="pointC" class="javabrains.Point">
+		<property name="x" value="-20"> </property>
+		<property name="y" value="0"> </property>
+	</bean>
+	
+</beans>
