@@ -15,6 +15,7 @@
         <module>SpringDemo</module>
         <module>ANT_Proj</module>
         <module>JMS_Test</module>
+        <module>Threading</module>
     </modules>
 
     <properties>
