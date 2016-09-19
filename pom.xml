@@ -16,6 +16,7 @@
         <module>ANT_Proj</module>
         <module>JMS_Test</module>
         <module>Threading</module>
+        <module>RadioSiteTest</module>
     </modules>
 
     <properties>
