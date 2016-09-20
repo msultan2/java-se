@@ -23,6 +23,7 @@
         <module>SendMail</module>
         <module>InternationalPromo</module>
         <module>SMS_E2E_Parser</module>
+        <module>TSP_Stats_Parser</module>
     </modules>
 
     <properties>
