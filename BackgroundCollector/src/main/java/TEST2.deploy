@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<simple-archive-deployment nselem="simple-archive-deployment" class="oracle.jdeveloper.deploy.jar.ArchiveProfile" xmlns="http://xmlns.oracle.com/jdeveloper/101303/deploy/jar">
+   <archiveOptions>
+      <additionalManifests/>
+      <compressed>false</compressed>
+      <hasManifest>true</hasManifest>
+      <mainClass>Collectors.Stats_Collector</mainClass>
+   </archiveOptions>
+   <fileGroups>
+      <groups>
+         <Item class="oracle.jdeveloper.deploy.common.PackagingFileGroup" internalName="project-output">
+            <contributors>
+               <Item type="2"/>
+               <Item type="7"/>
+               <Item type="6"/>
+               <Item type="1">
+                  <location path="src/drs/jconn3.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/jdbc3_0-ext.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/jTDS3.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/log4j-1.2.15.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/mysql-connector-java-5.1.7-bin.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/sqljdbc_1.2/enu/sqljdbc.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/sqljdbc4.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/ojdbc6.jar" jar-entry=""/>
+               </Item>
+               <Item type="1">
+                  <location path="src/drs/ojdbc6-11.jar" jar-entry=""/>
+               </Item>
+            </contributors>
+            <displayName>Project Output</displayName>
+            <filters>
+               <rules>
+                  <Item type="1" pattern="**/CVS/"/>
+                  <Item type="1" pattern="**.cdi"/>
+                  <Item type="1" pattern="**.contrib"/>
+                  <Item type="1" pattern="**.keep"/>
+                  <Item type="1" pattern="**.rvi"/>
+                  <Item type="1" pattern=".jsps/"/>
+                  <Item type="1" pattern=".tags/"/>
+                  <Item type="1" pattern=".dtags/"/>
+                  <Item type="1" pattern="**/*.jht"/>
+                  <Item type="1" pattern="**/*.jjt"/>
+                  <Item type="1" pattern="**/*.jxt"/>
+                  <Item type="0" pattern="**"/>
+               </rules>
+            </filters>
+            <targetWithinJar/>
+         </Item>
+      </groups>
+   </fileGroups>
+   <jarURL path="deploy/TEST2.jar"/>
+   <profileDeps/>
+</simple-archive-deployment>

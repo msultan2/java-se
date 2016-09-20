@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Promotion Configuration Parameters</comment>
+
+<entry key="ServiceName">Header</entry>
+
+<entry key="DB_From_IP">172.19.10.221</entry>
+<entry key="DB_From_Port">3306</entry>
+<entry key="DB_From_DB_Name">1010CNP</entry>
+<entry key="DB_From_UserName">Reader</entry>
+<entry key="DB_From_Password">Reader</entry>
+<entry key="DB_From_DB_Type">MySQL</entry>
+<entry key="Quary_From">select MSISDN,Date from Distinct_Subs where date='DateYYYY-MM-DD'</entry>
+
+<entry key="DB_To_IP">ActiveDB</entry>
+<entry key="DB_To_Port">3306</entry>
+<entry key="DB_To_DB_Name">Tibco</entry>
+<entry key="DB_To_UserName">Writer</entry>
+<entry key="DB_To_Password">Writer</entry>
+<entry key="DB_To_DB_Type">MYSQL</entry>
+<entry key="Quary_To">XXX</entry>
+
+<entry key="ExportToFile">true</entry>
+<entry key="ExportToFile_Delimiter">,</entry>
+
+<entry key="Command2BExecutedB4Insert">XXX</entry>
+<entry key="WithStatementsLog">false</entry>
+
+<entry key="Comment">Mapping From and To table Columns</entry>
+<entry key="Comment">Insert</entry>
+<entry key="TableName">Log</entry>
+<entry key="WithDate_Insert">true</entry>
+<entry key="DateColumnName">Date</entry>
+<entry key="InsertMap1">MSISDN|MSISDN</entry>
+<entry key="InsertMap2">Date|Date</entry>
+
+
+<entry key="log.iDELIM">,</entry>
+<entry key="log.oDELIM">,</entry>
+
+
+<entry key="Replace_Ignore">Replace</entry>
+
+<entry key="Log_DB_IP">activedb</entry>
+<entry key="Log_DB_Type">MySQL</entry>
+<entry key="Log_DB_Port">3306</entry>
+<entry key="Log_DB_UserName">Writer</entry>
+<entry key="Log_DB_Password">Writer</entry>
+<entry key="Log_DB_DataBase">Loggers</entry>
+<entry key="Log_DB_TableName">Java_Logs</entry>
+
+</properties>

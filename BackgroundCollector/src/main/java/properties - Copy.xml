@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Promotion Configuration Parameters</comment>
+
+
+<entry key="ServiceName">VF_Super_July11</entry>
+
+<entry key="DB_From_IP">172.19.10.225</entry>
+<entry key="DB_From_Port">8101</entry>
+<entry key="DB_From_DB_Name">PromoDB</entry>
+<entry key="DB_From_UserName">PRIZING_DWH</entry>
+<entry key="DB_From_Password">PRIZING_DWH_1</entry>
+<entry key="DB_From_DB_Type">Oracle</entry>
+<entry key="Quary_From">SELECT to_char(REQUEST_DATE,'HH24') REQUEST_Hour, B_TYPE, B_GOV, B_BROUP, GIFT_ID, STATE_NAME, to_char(GIFT_DATE,'YYYY-MM-DD') GIFT_DATE, GIFT_HOUR, to_char(REQUEST_DATE,'YYYY-MM-DD') REQUEST_DATE, to_char(REDEMPTION_DATE,'YYYY-MM-DD') REDEMPTION_DATE, to_char(PROCESSING_DATE,'YYYY-MM-DD') PROCESSING_DATE, GIFT_ERRORS,Count(*) FROM RAMADAN_PROMO.GIFTS_VIEW WHERE to_char(GIFT_DATE,'YYYY-MM-DD')='dateYYYY-MM-DD' GROUP BY B_TYPE, B_GOV, B_BROUP, GIFT_ID, STATE_NAME, to_char(GIFT_DATE,'YYYY-MM-DD'), GIFT_HOUR , to_char(REQUEST_DATE,'YYYY-MM-DD') , to_char(REDEMPTION_DATE,'YYYY-MM-DD') , to_char(PROCESSING_DATE,'YYYY-MM-DD'), GIFT_ERRORS,to_char(REQUEST_DATE,'HH24')</entry>
+
+
+<entry key="DB_To_IP">ActiveDB</entry>
+<entry key="DB_To_Port">3306</entry>
+<entry key="DB_To_DB_Name">Ramadan_2011</entry>
+<entry key="DB_To_UserName">Writer</entry>
+<entry key="DB_To_Password">Writer</entry>
+<entry key="DB_To_DB_Type">MYSQL</entry>
+<entry key="Quary_To">XXX</entry>
+
+<entry key="Command2BExecutedB4Insert">XXX</entry>
+<entry key="WithStatementsLog">false</entry>
+
+<entry key="Comment">Mapping From and To table Columns</entry>
+<entry key="Comment">Insert</entry>
+<entry key="TableName">Transactions</entry>
+<entry key="WithDate_Insert">true</entry>
+<entry key="DateColumnName">GIFT_DATE</entry>
+<entry key="InsertMap1">B_TYPE|B_TYPE</entry>
+<entry key="InsertMap2">B_GOV|B_Governerate</entry>
+<entry key="InsertMap3">STATE_NAME|State</entry>
+<entry key="InsertMap4">GIFT_ID|GIFT_ID</entry>
+<entry key="InsertMap5">GIFT_HOUR|GIFT_HOUR</entry>
+<entry key="InsertMap6">REQUEST_DATE|REQUEST_DATE</entry>
+<entry key="InsertMap7">REDEMPTION_DATE|REDEMPTION_DATE</entry>
+<entry key="InsertMap8">PROCESSING_DATE|PROCESSING_DATE</entry>
+<entry key="InsertMap9">GIFT_ERRORS|GIFT_ERROR</entry>
+<entry key="InsertMap10">REQUEST_Hour|REQUEST_Hour</entry>
+<entry key="InsertMap11">B_BROUP|`Group`</entry>
+<entry key="InsertMap12">Count(*)|Count</entry>
+
+<entry key="Log_DB_IP">activedb</entry>
+<entry key="Log_DB_Type">MySQL</entry>
+<entry key="Log_DB_Port">3306</entry>
+<entry key="Log_DB_UserName">Writer</entry>
+<entry key="Log_DB_Password">Writer</entry>
+<entry key="Log_DB_DataBase">Loggers</entry>
+<entry key="Log_DB_TableName">Java_Logs</entry>
+
+
+<entry key="log.iDELIM">,</entry>
+<entry key="log.oDELIM">,</entry>
+
+</properties>

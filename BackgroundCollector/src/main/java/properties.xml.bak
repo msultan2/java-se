@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Promotion Configuration Parameters</comment>
+
+<entry key="ServiceName">Test</entry>
+
+
+<entry key="DB_Service_Details_IP">172.19.10.221</entry>
+<entry key="DB_Service_Details_Port">3306</entry>
+<entry key="DB_Service_Details_DB_Name">group_stats</entry>
+<entry key="DB_Service_Details_UserName">Reader</entry>
+<entry key="DB_Service_Details_Password">Reader</entry>
+<entry key="DB_Service_Details_DB_Type">Mysql</entry>
+<entry key="DB_Service_Details_Query">select * from COLLECTORS where ServiceName='%ServiceName_DB%'</entry>
+
+
+
+<entry key="log.iDELIM">,</entry>
+<entry key="log.oDELIM">,</entry>
+
+<entry key="Replace_Ignore">Replace</entry>
+
+<entry key="Log_DB_IP">activedb</entry>
+<entry key="Log_DB_Type">MySQL</entry>
+<entry key="Log_DB_Port">3306</entry>
+<entry key="Log_DB_UserName">Writer</entry>
+<entry key="Log_DB_Password">Writer</entry>
+<entry key="Log_DB_DataBase">Loggers</entry>
+<entry key="Log_DB_TableName">Java_Logs</entry>
+
+</properties>
