@@ -33,6 +33,7 @@
         <module>SMS_E2E_Parser</module>
         <module>TSP_Stats_Parser</module>
         <module>NewPromo</module>
+        <module>LDAP</module>
     </modules>
 
     <properties>
