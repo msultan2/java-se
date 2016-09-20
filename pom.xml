@@ -17,23 +17,8 @@
     </repositories>
 
     <modules>
-        <module>BackgroundCollector</module>
-        <module>HibernateProj</module>
-        <module>JMS_Project</module>
-        <module>SpringDemo</module>
-        <module>ANT_Proj</module>
-        <module>JMS_Test</module>
-        <module>Threading</module>
-        <module>RadioSiteTest</module>
-        <module>SendSMS</module>
-        <module>XML_Parser</module>
-        <module>SP_Excuter</module>
-        <module>SendMail</module>
-        <module>InternationalPromo</module>
-        <module>SMS_E2E_Parser</module>
-        <module>TSP_Stats_Parser</module>
-        <module>NewPromo</module>
-        <module>LDAP</module>
+        <module>Concepts</module>
+        <module>Applications</module>
     </modules>
 
     <properties>
