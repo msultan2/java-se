@@ -11,10 +11,10 @@
 
     <modules>
         <module>BackgroundCollector</module>
-        <module>RadioSiteTest</module>
         <module>InternationalPromo</module>
+        <module>NewPromo</module>
+        <module>RadioSiteTest</module>
         <module>SMS_E2E_Parser</module>
         <module>TSP_Stats_Parser</module>
-        <module>NewPromo</module>
     </modules>
 </project>
