@@ -21,6 +21,7 @@
         <module>XML_Parser</module>
         <module>SP_Excuter</module>
         <module>SendMail</module>
+        <module>InternationalPromo</module>
     </modules>
 
     <properties>
