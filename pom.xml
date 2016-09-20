@@ -22,6 +22,7 @@
         <module>SP_Excuter</module>
         <module>SendMail</module>
         <module>InternationalPromo</module>
+        <module>SMS_E2E_Parser</module>
     </modules>
 
     <properties>
