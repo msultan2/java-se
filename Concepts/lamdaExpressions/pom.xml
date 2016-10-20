@@ -6,6 +6,6 @@
         <artifactId>Concepts</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>lamdaExpressions</artifactId>
+    <artifactId>LamdaExpressions</artifactId>
     <packaging>jar</packaging>
 </project>
