@@ -14,7 +14,11 @@ public class Person {
   private String eMail;
   private String phone;
   private String address;
-  
+
+    void printName() {
+        System.out.println(givenName + " " + surName);
+    }
+
   public static class Builder{
     
     private String givenName="";
@@ -91,7 +95,23 @@ public class Person {
   public int getAge(){
     return age;
   }
-            
+  
+  public Gender getGender(){
+    return gender;
+  }
+  
+  public String getEmail(){
+    return eMail;
+  }
+  
+  public String getPhone(){
+    return phone;
+  }
+  
+  public String getAddress(){
+    return address;
+  }
+  
   public void print(){
     System.out.println(
       "\nName: " + givenName + " " + surName + "\n" + 
@@ -102,17 +122,11 @@ public class Person {
       "Address: " + address + "\n"
                 );
   } 
-  
-  public void printName(){    
-    System.out.println(
-      "Name: " + givenName + " " + surName);
-  }
 
   @Override
   public String toString(){
-    return "Name: " + givenName + " " + surName + "\n" + "Age: " + age + "  Gender: " + gender + "\n" + "eMail: " + eMail + "\n" + "Address: " + address + "\n";
+    return "Name: " + givenName + " " + surName + "\n" + "Age: " + age + "  Gender: " + gender + "\n" + "eMail: " + eMail + "\n";
   } 
-  
 
   public static List<Person> createShortList(){
     List<Person> people = new ArrayList<>();
