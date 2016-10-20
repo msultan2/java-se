@@ -21,5 +21,6 @@
         <module>SpringDemo</module>
         <module>Threading</module>
         <module>XML_Parser</module>
+        <module>lamdaExpressions</module>
     </modules>
 </project>
