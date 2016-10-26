@@ -22,5 +22,6 @@
         <module>Threading</module>
         <module>XML_Parser</module>
         <module>lamdaExpressions</module>
+        <module>Collections</module>
     </modules>
 </project>
